@@ -57,21 +57,3 @@ INSERT INTO transacciones_ventas (id_libro, fecha_venta, cantidad, total) VALUES
     (4, '2024-05-07', 8, 148.00),
     (5, '2024-05-10', 6, 88.50);
 
-
--- Obtener todos los libros ordenados por título
-SELECT * FROM libros
-ORDER BY titulo;
-
--- Insertar un nuevo libro
-INSERT INTO libros (titulo, id_autor, precio, cantidad_stock) VALUES ('Nuevo Libro', 1, 10.99, 50);
-
--- Actualizar el precio de un libro
-SET SQL_SAFE_UPDATES = 0;
-UPDATE libros SET precio = 12.99 WHERE titulo = 'Nuevo Libro';
-
--- Eliminar un libro
-DELETE FROM libros WHERE titulo = 'Nuevo Libro';
-
--- Insertar un autor con valores predeterminados para nacionalidad
-INSERT INTO autores (nombre, apellido) VALUES ('Juan', 'Pérez');
-
