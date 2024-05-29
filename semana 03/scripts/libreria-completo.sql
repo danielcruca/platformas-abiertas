@@ -165,6 +165,7 @@ JOIN autores a ON l.id_autor = a.id_autor;
 INSERT INTO libros (titulo, id_autor, precio, cantidad_stock) VALUES ('Nuevo Libro', 1, 10.99, 50);
 
 -- Actualizar el precio de un libro
+SET SQL_SAFE_UPDATES = 0;
 UPDATE libros SET precio = 12.99 WHERE titulo = 'Nuevo Libro';
 
 -- Eliminar un libro
