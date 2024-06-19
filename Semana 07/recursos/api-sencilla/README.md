@@ -14,8 +14,8 @@ Ejemplo:
 get http://localhost/api/libreria-api/public/index.php/autores/1
 
 
-# Elimar un libro:
+# Eliminar un libro:
 
-delete  http://localhost/api/libreria-api/public/index.php/autores/1
+delete  http://localhost/api/libreria-api/public/index.php/autores/{id}
 
 
