@@ -11,7 +11,7 @@ get http://localhost/api/libreria-api/public/index.php/autores/
 get http://localhost/api/libreria-api/public/index.php/autores/{id}
 
 Ejemplo:
-get http://localhost/api/libreria-api/public/index.php/autores/{id}
+get http://localhost/api/libreria-api/public/index.php/autores/1
 
 
 # Elimar un libro:
@@ -19,6 +19,3 @@ get http://localhost/api/libreria-api/public/index.php/autores/{id}
 delete  http://localhost/api/libreria-api/public/index.php/autores/1
 
 
-# Actualizar un libro:
-
-update  http://localhost/api/libreria-api/public/index.php/autores/1 
