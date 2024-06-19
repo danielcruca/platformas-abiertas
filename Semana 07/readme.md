@@ -1,4 +1,6 @@
-# Estructura de folders
+# ¿Cómo crear una estructura inicial de API?
+
+## Estructura de folders
 
 1. Crear folder en **C:\xampp\htdocs**
 2. Por ejemplo **libreria-api**.
@@ -12,7 +14,7 @@
     3. models.
 
 
-# Archivos
+## Archivos
 
 Crear los siguientes archivos:
 
@@ -22,7 +24,7 @@ Crear los siguientes archivos:
 4. libreria-api\src\routes.php
 
 
-# Crear api inicial.
+## Crear api inicial.
 
 Agreagar contenido a:
 
