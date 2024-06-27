@@ -22,13 +22,15 @@ $objeto = new MiClase(); //hielo
 
 /// Publico
 echo "Accediendo a la propiedad pública desde fuera de la clase: " . $objeto->propiedadPublica . "<br>";
-$objeto->mostrarPropiedades();
+
 
 
 //Privado
 // Puede descomentar estas lineas para que vea el error:
 echo "Accediendo a la propiedad pública desde fuera de la clase: " . $objeto->propiedadPrivada . "<br>";
 $objeto->conectarBaseDeDatos();
+
+$objeto->mostrarPropiedades();
 
 
 ?>

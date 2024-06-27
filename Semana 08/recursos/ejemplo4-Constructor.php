@@ -1,16 +1,21 @@
 <?php
 
 class Carro {
-    private $marca;
-    private $modelo;
+    public $marca;
+    public $modelo;
 
     // Constructor de la clase Carro
-    public function __construct($marca, $modelo) {
-        $this->marca = $marca;
-        $this->modelo = $modelo;
+    public function __construct() {
+ 
+
+
     }
 }
 
 // Crear una nueva instancia de la clase Carro
-$miCarro = new Carro("Toyota", "Corolla");
+$miCarro = new Carro();
+$miCarro->marca = "Toyota";
+$miCarro->modelo = "Corolla";
+
+
 $miCarro2 = new Carro("suzuki", "alto");
