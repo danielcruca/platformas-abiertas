@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario con Diversos Tipos de Inputs</title>
+  </head>
+  <body>
+    <h2>Formulario con Diversos Tipos de Inputs</h2>
+
+    <form action="procesador.php" method="post">
+      <!-- Texto -->
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Ingrese su nombre"
+        required
+      />
+      <br />
+      <br />
+
+      <!-- Email -->
+      <label for="email">Correo electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="usuario@ejemplo.com"
+        required
+      />
+      <br />
+      <br />
+      <!-- Número -->
+      <label for="numero">Número:</label>
+      <input
+        type="number"
+        id="numero"
+        name="numero"
+        placeholder="Ingrese un número"
+        required
+      />
+      <br />
+      <br />
+      <!-- Fecha -->
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required />
+      <br />
+      <br />
+      <!-- Contraseña -->
+      <label for="contrasena">Contraseña:</label>
+      <input
+        type="password"
+        id="contrasena"
+        name="contrasena"
+        placeholder="Ingrese su contraseña"
+        required
+      />
+      <br />
+      <br />
+      <!-- Checkbox -->
+      <label>Preferencias:</label>
+      <input type="checkbox" id="opcion1" name="opcion1" value="opcion1" />
+      <label for="opcion1">Opción 1</label>
+      <input type="checkbox" id="opcion2" name="opcion2" value="opcion2" />
+      <label for="opcion2">Opción 2</label>
+      <br />
+      <br />
+      <!-- Radio -->
+      <label>Seleccionar género:</label>
+      <input type="radio" id="masculino" name="genero" value="masculino" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" id="femenino" name="genero" value="femenino" />
+      <label for="femenino">Femenino</label>
+      <br />
+      <br />
+      <!-- Select -->
+      <label for="opciones">Seleccionar opciones:</label>
+      <select id="opciones" name="opciones" multiple>
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+      </select>
+      <br />
+      <br />
+      <!-- Textarea -->
+      <label for="comentarios">Comentarios:</label>
+      <textarea
+        id="comentarios"
+        name="comentarios"
+        placeholder="Escriba sus comentarios aquí"
+      ></textarea>
+      <br />
+
+      <!-- Submit -->
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

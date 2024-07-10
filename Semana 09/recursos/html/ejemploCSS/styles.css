@@ -1,0 +1,14 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: hsl(0, 0%, 20%);
+    color: #fff;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+}

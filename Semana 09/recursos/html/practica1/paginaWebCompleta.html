@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página con Formulario</title>
+    <style>
+        body {
+            padding: 0;
+            background-color: #e2ede8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #666;
+            color: white;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        form {
+            margin: auto;
+            background-color: white;
+            padding: 1em;
+        }
+
+
+        input,select, textarea {
+            width: 100%;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 4px;
+            cursor: pointer;
+        }
+        /*selecionado por el id**/
+        #email {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a> |
+        <a href="#">Acerca de</a> |
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main>
+        <form action="exito.html" method="post" >
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option value="0">Seleccione</option>
+                <option value="1">San José</option>
+                <option value="2">Alajuela</option>
+                <option value="3">Heredia</option>
+                <option value="4">Cartago</option>
+                <option value="5">Puntarenas</option>
+                <option value="6">Guanacaste</option>
+                <option value="7">Limon</option>
+            </select>
+
+            <label for="codigo-postal">Fecha:</label>
+            <input type="number" id="codigo-postal" name="codigo-postal" required>
+
+            
+            <label for="archivoPDF">Selecciona un archivo PDF:</label>
+            <input type="file" id="archivoPDF" name="archivoPDF" accept=".pdf">
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        pie de pagina
+    </footer>
+
+</body>
+</html>

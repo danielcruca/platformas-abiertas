@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estilos CSS en HTML</title>
+    <style>
+        /* Propiedades de texto */
+        p {
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            text-align: left;
+        }
+
+        /* Propiedades de fondo */
+        body {
+            background-color: #f0f0f0;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+        }
+
+        /* Propiedades de diseño y modelo de caja */
+        .caja {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Propiedades de posición */
+        .caja-posicion {
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        /* Propiedades de lista */
+        ul {
+            list-style-type: square;
+            list-style-image: url('marcador.png');
+        }
+    </style>
+</head>
+<body>
+
+    <p>Este es un párrafo de ejemplo con estilos de texto.</p>
+
+    <div class="caja">
+        <p>Esta es una caja con propiedades de diseño y modelo de caja.</p>
+    </div>
+
+    <div class="caja caja-posicion">
+        <p>Esta es otra caja con propiedades de posición.</p>
+    </div>
+
+    <ul>
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+        <li>Elemento de lista 3</li>
+    </ul>
+
+</body>
+</html>

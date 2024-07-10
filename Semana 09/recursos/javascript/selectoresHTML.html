@@ -1,0 +1,33 @@
+<!-- Selector por id-->
+<input type="text" id="nombre1" value="Francisco" />
+<script>
+  // Seleccionar por ID
+  let inputNombre = document.getElementById("nombre1");
+
+  console.log(inputNombre.value);
+</script>
+
+<!-- Selector por  nombre-->
+<input type="text" name="nombre2" value="Luis" />
+<script>
+  // Seleccionar por Nombre
+
+  let inputsNombre2 = document.getElementsByName("nombre2");
+
+  // getElementsByName devuelve una colección, así que necesitas acceder al elemento específico por su índice
+  let inputNombre2 = inputsNombre2[0];
+
+  console.log(inputNombre2.value);
+</script>
+
+ <!-- Selector por etiqueta -->
+<input type="text" name="nombre3" value="Raquel" />
+<script>
+  // Seleccionar por Nombre de Etiqueta
+  let inputsTexto = document.getElementsByTagName("input");
+  
+  // getElementsByTagName devuelve una colección, así que necesitas acceder al elemento específico por su índice
+  let primerInputTexto = inputsTexto[0];
+
+  console.log(primerInputTexto.value);
+</script>
