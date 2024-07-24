@@ -1,0 +1,8 @@
+http://localhost/api/libreria-api/public/index.php/autores
+
+
+
+http://localhost/api/libreria-api/public/index.php/libros
+
+
+http://localhost/api/libreria-api/public/index.php/prueba
