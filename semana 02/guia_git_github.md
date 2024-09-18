@@ -80,10 +80,10 @@ Sube los cambios a GitHub:
 ```bash
 git push origin main
 ```
-
+**NOTA:**
 git push origin main significa que estás subiendo los cambios de la rama principal (main) de tu repositorio local al repositorio remoto llamado origin.
 
-Revisa el repositorio en GitHub para verificar que los cambios se hayan aplicado.
+Revisa el repositorio en GitHub(WEB) para verificar que los cambios se hayan aplicado.
 
 ## Instalar GitHub Desktop
 
