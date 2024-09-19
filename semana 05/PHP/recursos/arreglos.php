@@ -8,6 +8,7 @@ echo $frutas[0];  // manzana
 echo $frutas[1];  // plátano
 echo $frutas[2];  // uva
 echo $frutas[2];  // uva
+echo $frutas[2];  // uva
 ?>
 
 
