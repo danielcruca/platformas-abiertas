@@ -115,7 +115,7 @@ FROM transacciones_ventas tv
 JOIN libros l ON tv.id_libro = l.id_libro
 JOIN autores a ON l.id_autor = a.id_autor;
 
--- Obtener el libro con el precio más alto
+-- Obtener el libro con el precio más altov
 SELECT * FROM libros
 WHERE precio = (SELECT MAX(precio) FROM libros);
 

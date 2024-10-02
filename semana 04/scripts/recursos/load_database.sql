@@ -57,9 +57,59 @@ INSERT INTO transacciones_ventas (id_libro, fecha_venta, cantidad, total) VALUES
     (4, '2024-05-07', 8, 148.00),
     (5, '2024-05-10', 6, 88.50);
 
-/* Libros que tiene al menos una venta*/
-SELECT l.id_libro, l.titulo, a.nombre, a.apellido
+-- # CRUD
+-- Insertar un nuevo libro
+INSERT INTO libros (titulo, id_autor, precio, cantidad_stock) VALUES ('Nuevo Libro', 1, 10.99, 50);
+
+-- Actualizar el precio de un libro
+SET SQL_SAFE_UPDATES = 0;
+UPDATE libros SET precio = 12.99 WHERE titulo = 'Nuevo Libro';
+
+-- Eliminar un libro
+DELETE FROM libros WHERE titulo = 'Nuevo Libro';
+
+-- Insertar un autor con valores predeterminados para nacionalidad
+INSERT INTO autores (nombre, apellido) VALUES ('Juan', 'Pérez');
+
+--- Calculos:
+
+-- Calcular el precio promedio de los libros
+SELECT AVG(precio) AS precio_promedio FROM libros;
+
+--- Order by
+-- Obtener todos los libros ordenados por título
+SELECT * FROM libros
+ORDER BY titulo;
+
+
+/*1. Obtener libros vendidos y su cantidad restante en stock
+ */
+SELECT l.id_libro, l.titulo, l.cantidad_stock, SUM(tv.cantidad) AS cantidad_vendida
 FROM libros l
 JOIN transacciones_ventas tv ON l.id_libro = tv.id_libro
-JOIN autores a ON l.id_autor = a.id_autor
-GROUP BY l.id_libro, l.titulo, a.nombre, a.apellido;
+GROUP BY l.id_libro, l.titulo, l.cantidad_stock;
+
+/*
+2. Obtener el listado de las 5 autores más vendidos y su cantidad de ventas
+
+*/
+SELECT a.nombre AS autor_nombre, a.apellido AS autor_apellido, SUM(tv.cantidad) AS total_ventas
+FROM autores a
+JOIN libros l ON a.id_autor = l.id_autor
+JOIN transacciones_ventas tv ON l.id_libro = tv.id_libro
+GROUP BY a.nombre, a.apellido
+ORDER BY total_ventas DESC
+LIMIT 5;
+
+/* vista  */
+
+-- Crear una vista jerárquica de autores y sus libros
+CREATE VIEW autores_libros AS
+SELECT a.id_autor, a.nombre, a.apellido, l.id_libro, l.titulo
+FROM autores a
+LEFT JOIN libros l ON a.id_autor = l.id_autor;
+
+
+--- Inner join simple:
+
+SELECT libros.id_libro, libros.titulo, autores.nombre, autores.apellido, libros.cantidad_stock FROM libros JOIN autores ON libros.id_autor = autores.id_autor;
