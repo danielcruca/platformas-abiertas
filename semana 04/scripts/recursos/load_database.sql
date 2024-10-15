@@ -112,4 +112,10 @@ LEFT JOIN libros l ON a.id_autor = l.id_autor;
 
 --- Inner join simple:
 
-SELECT libros.id_libro, libros.titulo, autores.nombre, autores.apellido, libros.cantidad_stock FROM libros JOIN autores ON libros.id_autor = autores.id_autor;
+SELECT libros.id_libro, libros.titulo, autores.nombre, autores.apellido, libros.cantidad_stock 
+FROM libros JOIN autores ON libros.id_autor = autores.id_autor;
+
+
+CREATE VIEW view_libros_y_autores as 
+SELECT libros.id_libro, libros.titulo, autores.nombre, autores.apellido, libros.cantidad_stock 
+FROM libros JOIN autores ON libros.id_autor = autores.id_autor;
