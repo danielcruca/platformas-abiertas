@@ -28,12 +28,17 @@ La estructura de archivos debería verse algo así:
 
 ```
 C:.
-├───public
-│   └───error
-└───src
-    ├───controllers
-    ├───db
-    └───models
++---public
+|   |   index.php
+|   |   
+|   \---error
+|           response.html
+|
+\---src
+    |   routes.php
+    |
+    +---controllers
+    \---db
 ```
 
 ---
@@ -143,4 +148,16 @@ if ($path == "holamundo") {
 
 ---
 
-¡Listo! Con estos pasos, tendrás configurada la estructura básica de tu API en PHP.
+
+# Probar API.
+
+
+ENDPOINT PRINCIPAL: http://localhost/libreria-api/public/index.php/holamundo
+ENDPOINT CON UN PARÁMETRO: http://localhost/libreria-api/public/index.php/holamundo?nombre=Daniel
+
+##  Ejemplo usando POSTMAN:
+
+![Ejemplo POSTMAN](imagenes/ejemplo-postman.png "Ejemplo POSTMAN")
+
+
+
