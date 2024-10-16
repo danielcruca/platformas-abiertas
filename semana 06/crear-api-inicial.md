@@ -152,8 +152,8 @@ if ($path == "holamundo") {
 # Probar API.
 
 
-ENDPOINT PRINCIPAL: http://localhost/libreria-api/public/index.php/holamundo
-ENDPOINT CON UN PARÁMETRO: http://localhost/libreria-api/public/index.php/holamundo?nombre=Daniel
+- ENDPOINT PRINCIPAL: http://localhost/libreria-api/public/index.php/holamundo
+- ENDPOINT CON UN PARÁMETRO: http://localhost/libreria-api/public/index.php/holamundo?nombre=Daniel
 
 ##  Ejemplo usando POSTMAN:
 
